@@ -10,22 +10,34 @@
       height: 360px;
       width: 100%;
       object-fit: cover;
+      margin-bottom:16px
       
     }
   </style>
   
 </head>
 <body>
+  {% include 'nav.html' %}
+
+ 
   <div class="container">
     
     <h1 class="text-center mt-2 mb-4">goodwill Careers</h1>
-    
-    
+
     <img class="img-fluid" id="banner" src="https://80f8c17a-5e5b-45f4-adfa-77667944b56e-00-1jgdb8v8tqnxy.pike.replit.dev/static/banner.jpg" height="320" id="banner">
+      
     
     <h2 class="text-center mt-2 mb-4">About goodwill</h2>
-    <p class="lead">Hard work will definitely pay off. History has shown that hard work is an essential part of our lives. Without hard work, there is no success in life. An idle person, who is seen relaxing all the time, can never achieve success. It is impossible to reach the height of success without hard work. People always think of shortcuts, but there is no shortcut in life. Everything depends on hard work and the way you take up things. We have heard the success stories of Edison, Mahatma Gandhi, Isaac Newton, Saina Nehwal, Roger Federer and so on. These people are among the many who have led exemplary lives and have become perfect models of how hard work can bring success.
-    </p>
+    <div class="row" style="margin-bottom:16px">
+      <div class="col-6">
+      <p class="lead">Hard work will definitely pay off. History has shown that hard work is an essential part of our lives. Without hard work, there is no success in life. An idle person, who is seen relaxing all the time, can never achieve success. It is impossible to reach the height of success without hard work. People always think of shortcuts, but there is no shortcut in life. Everything depends on hard work and the way you take up things. We have heard the success stories of Edison, Mahatma Gandhi, Isaac Newton, Saina Nehwal, Roger Federer and so on. These people are among the many who have led exemplary lives and have become perfect models of how hard work can bring success.
+      </p>
+      </div>
+      <div class="col-6">
+        <img src="static/people.jpg" style="height:320px; border-radius:4px;">
+      </div>
+    </div>
+    
   
     <h2 class='text-center mt-2 mb-4' >Open Positions</h2>  
     <div >
@@ -37,8 +49,9 @@
     </div>  
     <div class="text-center">
       <button class="btn btn-primary btn-lg">Contact Us</button>
-      <p class="mt-5">Copyrights 2024 ,Goodwill careers website</p>
+      
     </div>
+    {% include 'footer.html' %}
   </div>
   
   
